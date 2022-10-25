@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>SAD - Standardisasi Anggaran Daerah</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="css/aos.css">
+      <link rel="stylesheet" href="css/sweetalert2.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""/>
+      <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"> -->
+      <!-- <link href="/css/aos.css" rel="stylesheet"> -->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+      
+      <!-- <script src="js/plotly.min.js"></script>
+      <script src="https://cdn.plot.ly/plotly-2.14.0.min.js"></script> -->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      
+      <script data-require="plotly@1.0.0" data-semver="1.0.0" src="https://cdn.plot.ly/plotly-latest.min.js" defer></script>
+      <!-- loader  -->
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div> -->
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section" data-aos="fade-up" data-aos-duration="1000">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <div class="row">
+                                 <div class="col-4">
+                                    <a href="index.html">
+                                       <img  style="background-color: white; border-radius: 10px;" 
+                                       src="images/app-logo.png" alt="#" class="p-2" /> 
+                                    </a>
+                                 </div>
+                                 <div class="col-8 text-white border-left border-white">
+                                    Kementrian Keuangan Republik Indonesia
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04" data-aos="fade-up" data-aos-duration="1000">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                 <a class="nav-link" href="index.html">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="about.html">Semantic</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1" class="carousel slide" data-ride="carousel" data-aos="fade-up">
+            <ol class="carousel-indicators">
+               <li data-target="#banner1" data-slide-to="0" class="active"></li>
+               <li data-target="#banner1" data-slide-to="1"></li>
+               <li data-target="#banner1" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row d_flex">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <h1>Pre-process dan Standardisasi</h1>
+                                 <p>Standarisasi Nomenklatur akun dengan mengkombinasikan <em>pre-trained model <strong>BERT</strong> </em> dan metode pencarian text <em><strong> semantic search</strong></em> berdasarkan ukuran <em><strong>cosine similarity</strong></em>.</p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <img style="height: 450px; width: 100%; object-fit: cover;" src="images/banner-1.jpg" alt="#"/>
+                                    <h3>01</h3>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row d_flex">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <h1>Modelling</h1>
+                                 <p>Mengetahui besar <strong><em>impact</em></strong> dari tiap komponen <strong>APBD</strong> yang telah distandardisasi terhadap <strong>usia harapan hidup (UHH)</strong> pada suatu wilayah. </p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <img style="height: 450px; width: 100%; object-fit: cover;" src="images/banner-2.jpg" alt="#"/>
+                                    <h3>02</h3>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="carousel-item">
+                  <div class="container">
+                     <div class="carousel-caption">
+                        <div class="row d_flex">
+                           <div class="col-md-6">
+                              <div class="text-bg">
+                                 <h1>Diskusi</h1>
+                                 <p>Dengan menggunakan data dari <em>google trend </em> dapat diketahui pencarian <strong> penyakit-penyakit</strong> populer pada suatu wilayah yang menggambarkan kesadaran penduduk akan <em>penyakit tertentu</em>, sehingga bisa disandingkan dengan nilai UHH pada wilayah tersebut apakah <em> semakin tinggi tingkat kesadaran penduduk terhadap penyakit</em> tertentu dapat meningkatkan nilai <strong>UHH</strong> pada wilayah tersebut. </p>
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="text_img">
+                                 <figure>
+                                    <img style="height: 450px; width: 100%; object-fit: cover;" src="images/banner-3.png" alt="#"/>
+                                    <h3>03</h3>
+                                 </figure>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+         </div>
+      </section>
+      <!-- end banner -->
+      <!-- team -->
+      <div class="team">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5" data-aos="fade-up">
+                  <div class="team_img">
+                     <figure><img src="images/perseon-fighting-virus.jpg" alt="#"/></figure>
+                  </div>
+               </div>
+               <div class="col-md-6 offset-md-1" data-aos="fade-left">
+                  <div class="titlepage">
+                     <h2>Identifikasi Komponen/Faktor yang Anggaran Terhadap Kondisi Kesehatan Masyarakat</h2>
+                     <p>Diperoleh model <strong class="number text-warning">Catboost - Regressor</strong> berdasarkan data <strong class="number text-warning">Numenklatur akun APBD</strong> sebagai variabel prediktor dan <strong class="number"><em>Umut Harapan Hidup</em></strong>
+                        sebagai variabel <strong class="number">Respon</strong> dengan nilai MAPE sebesar <strong class="number">2.7893</strong>.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- team -->
+         <div class="ideas">
+            <div class="container mb-7">
+               <div class="col-12" data-aos="fade-up" data-aos-duration="1000">
+                  <div class="titlepage">
+                     <h2>Sandbox - Simulasi Anggaran</h2>
+                  </div>
+               </div>
+               
+               <form id="request-form" class="main_form">
+                  <div class="row mb-7">
+                     <div class="col-12" data-aos="fade-left">
+                           <div class="row">
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-1" class="form-label">Advokasi,  Pemberdayaan,  Kemitraan, Peningkatan Peran serta Masyarakat dan Lintas Sektor Tingkat Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                 <input onblur="sumAnggaran()" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 1" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-2">Pelaksanaan Sehat dalam rangka Promotif Preventif Tingkat Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                 <input onblur="sumAnggaran()" id="input-2" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 2" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-3">Pemberian  Izin  Apotek,  Toko  Obat,  Toko  Alat Kesehatan   dan   Optikal,   Usaha   Mikro   Obat Tradisional (UMOT) <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-3" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 3" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-4">Pemberian  Izin  Praktik   Tenaga   Kesehatan  di Wilayah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-4" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 4" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-5">Pemberian Sertifikat Produksi untuk Sarana Produksi Alat Kesehatan Kelas 1 tertentu dan Perbekalan Kesehatan Rumah Tangga Kelas 1 Tertentu Perusahaan Rumah Tangga <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-5" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 5" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-6">Pemeriksaan dan Tindak Lanjut Hasil Pemeriksaan Post Market pada Produksi dan Produk   Makanan   Minuman   Industri   Rumah
+                                    Tangga <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-6" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 6" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-7">Penerbitan   Stiker   Pembinaan   pada   Makanan Jajanan dan Sentra Makanan Jajanan <span class="text-danger">*</span></label>
+                                 <input onblur="sumAnggaran()" id="input-7" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 7" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-8">Penerbitan Sertifikat Laik  Higiene  Sanitasi Tempat Pengelolaan Makanan (TPM) antara lain Jasa Boga,  Rumah  Makan/Restoran  dan Depot
+                                    Air Minum (DAM) <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-8" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 8" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-9">Penerbitan Sertifikat Produksi Pangan Industri Rumah Tangga dan Nomor P-IRT sebagai Izin Produksi, untuk Produk Makanan Minuman Tertentu  yang  Dapat  Diproduksi  oleh  Industri
+                                    Rumah Tangga <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-9" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 9" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-10">Pengembangan       Mutu       dan       Peningkatan
+                                    Kompetensi    Teknis    Sumber    Daya    Manusia Kesehatan Tingkat Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-10" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 10" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-11">Pengembangan      dan      Pelaksanaan      Upaya
+                                    Kesehatan Bersumber Daya Masyarakat (UKBM) Tingkat Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-11" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 11" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-12">Penyediaan Fasilitas Pelayanan Kesehatan untuk
+                                    UKM      dan      UKP      Kewenangan      Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-12" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 12" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-13">Penyediaan Layanan Kesehatan untuk UKM dan UKP Rujukan Tingkat Daerah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-13" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 13" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-14">Penyelenggaraan   Sistem   Informasi   Kesehatan
+                                    Secara Terintegrasi <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-14" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 14" style="color: black"> 
+                              </div>
+                              <div class="col-12" data-aos="fade-left">
+                                 <label for="input-15">Perencanaan Kebutuhan dan Pendayagunaan Sumber Daya Manusia Kesehatan untuk  UKP dan UKM di Wilayah Kabupaten/Kota <span class="text-danger">*</span></label>
+                                    <input onblur="sumAnggaran()" id="input-15" class="contactus anggaran" placeholder="Input Nilai Anggaran" type="number" name="Kegiatan 15" style="color: black"> 
+                              </div>
+                           </div>
+                           <div class="row" data-aos="fade-up">
+                              <div class="col-12">
+                                 <h1>Total Anggaran: <span id="nilai-anggaran"></span></h1>
+                              </div>
+                           </div>
+                           <div class="row" data-aos="fade-up">
+                              <div class="col-12">
+                                 <p>Hasil prediksi UHH berdasarkan simulasi adalah <b class="text-primary" id="hasil-prediksi">90909</b> tahun.</p>
+                              </div>
+                           </div>
+                     </div>
+                     <div class="col-12 justify-content-center" id="periksa-btn" data-aos="fade-up">
+                           <button type="submit" class="btn btn-block btn-warning text-white">PERIKSA</button>
+                           <!-- <button class="sub_btn btn-block" style="width: 100%!important">PERIKSA</button> -->
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+            <!-- team -->
+
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row justify-content-between">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" data-aos="zoom-out-right" data-aos-duration="1000">
+                     <h3>Navigasi</h3>
+                     <ul class="link_menu">
+                        <li><a href="index.html">Home</a></li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6" data-aos="zoom-out-left" data-aos-duration="1000">
+                     <h3>The Teams</h3>
+                     <ul class="link_menu">
+                        <li><a href="https://www.linkedin.com/mwlite/in/leofiro" target="_blank">Aldo Leofiro Irfiansyah</a></li>
+                        <li><a href="https://www.linkedin.com/mwlite/in/muarrikhyazka" target="_blank">Muarrikh Yazka Ginang Prasidana</a></li>
+                        <!-- <li><a href="https://www.linkedin.com/in/nashir-wahyudi-6b9989173/" target="_blank">Nashir Wahyudi</a></li> -->
+                        <li><a href="https://www.linkedin.com/mwlite/in/noviaprmtsr" target="_blank">Novia Permatasari</a></li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+            <div class="copyright">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-10 offset-md-1">
+                        <p>© 2022 All Rights Reserved. Design by <a href="https://html.design/"> Selo</a> Customized by Yolo</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/sweetalert2.min.js"></script>
+      <!-- <script src="js/custom.js"></script> -->
+      <script src="js/aos.js"></script>
+      <script>
+         AOS.init()
+      </script>
+
+      <script>
+         function sumAnggaran() {
+            let inputs = document.getElementsByClassName("anggaran");
+            let sum = 0;
+            for (input of inputs) {
+               if (input.value) {
+                  sum+=parseFloat(input.value);
+               }
+            }
+            console.log(sum)
+            document.getElementById('nilai-anggaran').innerText = sum;
+         }
+         $(document).ready(function() {
+            $('#request-form').submit(function (e) {
+               e.preventDefault();
+               Swal.fire({
+                  title: "Mohon tunggu.",
+                  text: "Sedang menghitung prediksi nilai UHH",
+                  html:`<img src="./images/calculator.gif"><img> <p>Sedang melakukan kalkulasi.</p>`,
+                  allowOutsideClick: false
+               })
+               var formData = new FormData(this);
+               const keys = Object.keys(Object.fromEntries(formData)); 
+               const jsondata = [];
+               keys.forEach(key => {
+                  if (formData.get(key) == "") {
+                     Swal.fire({
+                        title: "Terjadi Kesalahan",
+                        text: "Terdapat isiang yang masih kosong",
+                        icon: "error"
+                     })
+                     return;
+                  }
+                  jsondata.push({
+                     namapemda: "ABC",
+                     "Nama Kegiatan": key,
+                     "Nilai Anggaran": formData.get(key) == "" ? 0 : parseFloat(formData.get(key))
+                  })
+               })
+               fetch("https://maximumdas.pythonanywhere.com/", {
+                  method: 'POST', // *GET, POST, PUT, DELETE, etc.
+                  mode: 'cors', // no-cors, *cors, same-origin
+                  cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+                  credentials: 'same-origin', // include, *same-origin, omit
+                  headers: {
+                     'Content-Type': 'application/json'
+                     // 'Content-Type': 'application/x-www-form-urlencoded',
+                  },
+                  redirect: 'follow', // manual, *follow, error
+                  referrerPolicy: 'no-referrer', // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+                  body: JSON.stringify({x: jsondata}) // body data type must match "Content-Type" header
+               }).then((resp) => resp.json()
+               ).then((result) => {
+                  Swal.fire({
+                     title: "Berhasil melakukan prediksi!",
+                     html:`<img src="./images/success-gif.gif"></img>`,
+                     allowOutsideClick: false,
+                     timer: 1000
+                  })
+                  document.getElementById('hasil-prediksi').innerText = result.uhh;
+               }).catch(err => {
+                     Swal.fire({
+                        title: "Terjadi Kesalahan",
+                        text: err.messsage,
+                        icon: "error"
+                     })
+                  console.log(err);
+               })
+            })
+         })
+         function handleSubmit(e) {
+
+         } 
+      </script>
+   </body>
+</html>
+

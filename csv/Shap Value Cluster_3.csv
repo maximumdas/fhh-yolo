@@ -1,0 +1,38 @@
+,Variable,SHAP_abs,Corr,Sign
+8,Belanja Bunga Utang Pinjaman kepada Lembaga Keuangan Bank (LKB),0.0,0.0,blue
+33,Belanja Subsidi kepada Koperasi,0.0,0.0,blue
+12,Belanja Bunga Utang Pinjaman melalui BLUD,0.0,0.0,blue
+10,Belanja Bunga Utang Pinjaman kepada Pemerintah Daerah Lain,0.0,0.0,blue
+9,Belanja Bunga Utang Pinjaman kepada Lembaga Keuangan Bukan Bank (LKBB),0.0,0.0,blue
+16,Belanja Gaji dan Tunjangan MRP/MRPB,0.0002130704735551526,0.9417637502981139,red
+11,Belanja Bunga Utang Pinjaman kepada Pemerintah Pusat,0.0003187533255774778,-0.6610854865645336,blue
+29,Belanja Penunjang Otonomi Khusus,0.00043194242469731263,0.4732116901043897,red
+31,Belanja Subsidi kepada BUMN,0.0005736615955660518,-0.007041364855250088,blue
+32,Belanja Subsidi kepada Badan Usaha Milik Swasta,0.0012848981970256007,0.4027858415609808,red
+19,Belanja Hibah kepada BUMD,0.001613840774500056,0.7746834617812536,red
+20,Belanja Hibah kepada BUMN,0.0019216588453926002,0.8901313037445666,red
+22,Belanja Hibah kepada Pemerintah Daerah Lainnya,0.005921158839601414,0.28378474808809206,red
+30,Belanja Subsidi kepada BUMD,0.04025688849122711,-0.3237502335807075,blue
+4,"Belanja Bantuan Sosial kepada Lembaga Non Pemerintahan (Bidang Pendidikan, Keagamaan dan Bidang Lainnya)",0.051797829188385644,-0.2272539366072285,blue
+27,Belanja Pemeliharaan,0.05427640329999981,-0.5078831018321078,blue
+25,Belanja Pegawai BLUD,0.05621337908390545,0.28630883216923986,red
+18,Belanja Hibah Dana BOS,0.058281563488930085,0.500180140379729,red
+0,Belana Perjalanan Dinas,0.06035421623089652,0.1470892051731372,red
+5,Belanja Barang,0.06664185813257816,0.5457249880048282,red
+1,Belanja Bantuan Sosial kepada Individu,0.0758423277215015,-0.20613994981810946,blue
+23,Belanja Hibah kepada Pemerintah Pusat,0.0799409105694509,0.335432586079311,red
+2,Belanja Bantuan Sosial kepada Kelompok Masyarakat,0.08538362755791082,-0.6881384923016909,blue
+21,"Belanja Hibah kepada Badan, Lembaga, Organisasi Kemasyarakatan yang Berbadan Hukum Indonesia",0.08938788527663179,0.1489505345981182,red
+17,Belanja Hibah Bantuan Keuangan kepada Partai Politik,0.0908677922580907,-0.09342411641213436,blue
+28,Belanja Penerimaan Lainnya Pimpinan DPRD serta KDH/WKDH,0.098812387566743,0.3399375423362311,red
+34,Belanja Tambahan Penghasilan ASN,0.10166262113260119,0.376070969546554,red
+15,Belanja Gaji dan Tunjangan KDH/WKDH,0.10772715492131765,0.48191611953255553,red
+13,Belanja Gaji dan Tunjangan ASN,0.16923998025430115,-0.5707566046079241,blue
+6,Belanja Barang dan Jasa BLUD,0.17197861287591484,-0.6735732888677647,blue
+35,Belanja Uang dan/atau Jasa untuk Diberikan kepada Pihak Ketiga/Pihak Lain/Masyarakat,0.19147544016721363,0.6212074021058268,red
+24,Belanja Jasa,0.19628924295823671,0.7842409102459845,red
+3,Belanja Bantuan Sosial kepada Keluarga,0.2551988719575894,-0.7854162403901673,blue
+26,Belanja Pegawai BOS,0.2650936352167237,-0.9041339651207114,blue
+7,Belanja Barang dan Jasa BOS,0.3167438828923984,-0.815352330903026,blue
+14,Belanja Gaji dan Tunjangan DPRD,0.3701434737100755,-0.5738434389690525,blue
+36,Tambahan Penghasilan berdasarkan Pertimbangan Objektif Lainnya ASN,1.429457482099779,-0.8403720186157556,blue
