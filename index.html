@@ -368,19 +368,17 @@
                Swal.fire({
                   title: "Mohon tunggu.",
                   text: "Sedang menghitung prediksi nilai UHH",
+                  showConfirmButton:false,
                   html:`<img src="./images/calculator.gif"><img> <p>Sedang melakukan kalkulasi.</p>`,
                   allowOutsideClick: false
                })
                var formData = new FormData(this);
                const keys = Object.keys(Object.fromEntries(formData)); 
                const jsondata = [];
+               const errors = [];
                keys.forEach(key => {
                   if (formData.get(key) == "") {
-                     Swal.fire({
-                        title: "Terjadi Kesalahan",
-                        text: "Terdapat isiang yang masih kosong",
-                        icon: "error"
-                     })
+                     errors.push("Terdapat isiang yang masih kosong");
                      return;
                   }
                   jsondata.push({
@@ -389,6 +387,13 @@
                      "Nilai Anggaran": formData.get(key) == "" ? 0 : parseFloat(formData.get(key))
                   })
                })
+               if (errors.length > 0) {
+                  Swal.fire({
+                     title: "Terjadi Kesalahan",
+                     text: errors[0],
+                     icon: "error"
+                  })
+               }
                fetch("https://maximumdas.pythonanywhere.com/", {
                   method: 'POST', // *GET, POST, PUT, DELETE, etc.
                   mode: 'cors', // no-cors, *cors, same-origin
@@ -407,7 +412,7 @@
                      title: "Berhasil melakukan prediksi!",
                      html:`<img src="./images/success-gif.gif"></img>`,
                      allowOutsideClick: false,
-                     timer: 1000
+                     timer: 2000
                   })
                   document.getElementById('predict').classList.remove('d-none');
                   document.getElementById('hasil-prediksi').innerText = result.uhh;
