@@ -392,7 +392,8 @@
                      title: "Terjadi Kesalahan",
                      text: errors[0],
                      icon: "error"
-                  })
+                  });
+                  return;
                }
                fetch("https://maximumdas.pythonanywhere.com/", {
                   method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -411,6 +412,7 @@
                   Swal.fire({
                      title: "Berhasil melakukan prediksi!",
                      html:`<img src="./images/success-gif.gif"></img>`,
+                     showConfirmButton:false,
                      allowOutsideClick: false,
                      timer: 2000
                   })
